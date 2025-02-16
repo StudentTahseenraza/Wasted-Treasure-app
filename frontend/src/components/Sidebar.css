@@ -1,0 +1,89 @@
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: -350px; /* Move sidebar to the left */
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #e4e6e9;
+  box-shadow: 2px 0 5px rgba(14, 13, 13, 0.73); /* Shadow on the right side */
+  transition: left 0.3s ease;
+  z-index: 999;
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.sidebar.open {
+  left: 0; /* Show sidebar when open */
+}
+
+.sidebar-toggle {
+  position: fixed;
+  left: 20px; /* Move toggle button to the left */
+  top: 20px;
+  z-index: 1000;
+  background: #0f4ea0;
+  color: #e9e8f2;
+  border: 'none';
+  padding: '10px 15px';
+  border-radius: '5px';
+  cursor: 'pointer';
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #067aee;
+}
+
+.sidebar ul li button {
+  background: none;
+  border: none;
+  color: #044f9f;
+  cursor: pointer;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode ul li a {
+  color: #fff;
+}
+
+.dark-mode ul li button {
+  color: #fff;
+}
+
+/* Adjust Sidebar Width */
+.sidebar {
+  width: 350px; /* Increase width */
+}
+
+/* Custom Scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
